@@ -123,12 +123,12 @@ export default {
   },
 
   methods: {
-    register() {
-      // Логика регистрации пользователя
-      // ...
-      this.isRegistered = true;
-      this.username = 'John Doe';
-    },
+    // register() {
+    //   // Логика регистрации пользователя
+    //   // ...
+    //   this.isRegistered = true;
+    //   this.username = 'John Doe';
+    // },
     onChange() {
       // обновляем класс label в зависимости от значения input
       const label = event.target.previousElementSibling;
@@ -151,7 +151,7 @@ export default {
         this.input2 = '';
       }
     },
-    updateUsername(username) {
+   updateUsername(username) {
       this.username = username;
     },
     swapInputs() {
@@ -162,17 +162,17 @@ export default {
     toggleForm() {
       this.showForm = !this.showForm;
       this.loginMode = !this.loginMode
-      this.modalTitle = this.loginMode ? 'Регистрация' : 'Вход'
+       this.modalTitle = this.loginMode ? 'Вход' : 'Регистрация'
       if (this.activeForm === 'LoginForm') {
-        this.activeForm = 'RegisterForm'
-        this.modalTitle = 'Войти'
-
-      } else {
         this.activeForm = 'LoginForm'
-        this.modalTitle = 'Зарегестрироваться'
-
+      
+      } else {
+        this.activeForm = 'RegisterForm'
+       
       }
     }
+  
+
   }
 }
 </script>

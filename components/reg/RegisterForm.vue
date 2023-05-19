@@ -27,7 +27,7 @@ export default {
   name: 'RegisterForm',
   data() {
     return {
-      // usernameInput: '',
+      usernameInput: '',
       password: '',
       verificationCode: '',
       isEmail: false,
